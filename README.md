@@ -1,6 +1,6 @@
-<p align="center">⚡️𝗦𝗧𝗔𝗟𝗞𝗘𝗥-𝗨𝗦𝗘𝗥𝗕𝗢𝗧⚡️</p>
+<p align="center">⚡️ KHALNAYAK-HOSTER⚡️</p>
 
-<img src="https://files.catbox.moe/rz44me.jpg">
+<img src="">
 
 <p align="center">⚡️𝗔 𝗣𝗢𝗪𝗘𝗥𝗙𝗨𝗟 𝗜𝗗 𝗨𝗦𝗘𝗥𝗕𝗢𝗧⚡️</p>
 
