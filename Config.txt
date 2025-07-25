@@ -15,7 +15,7 @@ ALIVE_TEXT = None
 PM_LOGGER = None
 LOG_GROUP = None
 GIT_TOKEN = None #personal access token
-REPO_URL = "https://github.com/shoaib910385/STALKERUSERBOT"
+REPO_URL = "https://github.com/HKMUSIC/Khalnayak02"
 BRANCH = "master" #don't change
  
 STRING_SESSION1 = ""
