@@ -33,7 +33,7 @@ class Data:
 
     buttons = [
         generate_single_button,
-        [InlineKeyboardButton("˹𝐁ᴍᴡ ✘ 𝐇ᴏꜱᴛᴇʀ˼", url="https://t.me/Smarty020")],
+        [InlineKeyboardButton("˹𝐁ᴍᴡ ✘ 𝐇ᴏꜱᴛᴇʀ˼", url="https://t.me/BMW_USER_01_BOT")],
         [
             InlineKeyboardButton("❔ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ", callback_data="help"),
             InlineKeyboardButton("ᴀʙᴏᴜᴛ 🎶", callback_data="about")
@@ -42,19 +42,19 @@ class Data:
             InlineKeyboardButton("⚡ ᴜᴘᴅᴀᴛᴇ's", url="https://t.me/BeastSupportGc"),
             InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ⛈️️", url="https://t.me/BEAST_ERA")
         ],
-        [InlineKeyboardButton("🌿 ʙᴏᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ 🌿", url="https://t.me/Smarty020")],
+        [InlineKeyboardButton("🌿 ʙᴏᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ 🌿", url="https://t.me/BMW0RACER")],
     ]
 
     START = """
 **┌────── ˹ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ˼ ⏤͟͟͞͞‌‌‌‌★**
-**┆◍ ʜᴇʏ, ɪ ᴀᴍ : [˹𝐁ᴍᴡ ✘ 𝐇ᴏꜱᴛᴇʀ˼](https://t.me/BeastUserr_Bot)**
+**┆◍ ʜᴇʏ, ɪ ᴀᴍ : [˹𝐁ᴍᴡ ✘ 𝐇ᴏꜱᴛᴇʀ˼](https://t.me/BMW_USER_01_BOT)**
 **┆● ɴɪᴄᴇ ᴛᴏ ᴍᴇᴇᴛ ʏᴏᴜ !** 
 **└────────────────────────•**
 **❖ ɪ ᴀᴍ ᴀ ᴘᴏᴡᴇʀғᴜʟ ɪᴅ-ᴜsᴇʀ-ʙᴏᴛ**
 **❖ ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ғᴏʀ ғᴜɴ.**
 **❖ ɪ ᴄᴀɴ ʙᴏᴏsᴛ ʏᴏᴜʀ ɪᴅ **
 **•─────────────────────────•**
-**❖ ʙʏ : [🗡️⃟🖤⃝🎼🅢𝐦𝐚𝐫𝐭💙⃝⋆🕊️](https://t.me/Smarty020) 🚩**
+**❖ ʙʏ : [꧁𓊈𒆜🆃🅷🅴 🅱🅼🆆𒆜𓊉꧂](https://t.me/BMW0RACER) 🚩**
 """
 
     HELP = """
@@ -87,8 +87,8 @@ class Data:
 **sᴜᴘᴘᴏʀᴛᴇᴅ :- ʀᴇᴘʟʏ-ʀᴀɪᴅ, ɪᴅ-ᴄʟᴏɴᴇ, ʀᴀɪᴅ, sᴘᴀᴍ, ᴜsᴇʀ-ᴛᴀɢɢᴇʀ ᴇᴛᴄ.**
 
 **◌ ʟᴀɴɢᴜᴀɢᴇ : [ᴘʏᴛʜᴏɴ](https://www.python.org)**
-**◌ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [🗡️⃟🖤⃝🎼🅢𝐦𝐚𝐫𝐭💙⃝⋆🕊️](https://t.me/Smarty020)**
-**◌ ᴅᴇᴠᴇʟᴏᴘᴇʀ : [🗡️⃟🖤⃝🎼🅢𝐦𝐚𝐫𝐭💙⃝⋆🕊️](https://t.me/Smarty020)**
+**◌ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [꧁𓊈𒆜🆃🅷🅴 🅱🅼🆆𒆜𓊉꧂](https://t.me/BMW0RACER)**
+**◌ ᴅᴇᴠᴇʟᴏᴘᴇʀ : [꧁𓊈𒆜🆃🅷🅴 🅱🅼🆆𒆜𓊉꧂](https://t.me/BMW0RACER)**
 """
 
     DONATE = """
@@ -97,7 +97,7 @@ class Data:
 **ᴡᴇ ᴘʀᴏᴠɪᴅᴇ 24×7 ᴜsᴇʙᴏᴛ ʜᴏsᴛɪɴɢ sᴇʀᴠɪᴄᴇ. sᴏ ᴡᴇ ᴀʟsᴏ ɴᴇᴇᴅ sᴏᴍᴇ ʜᴇʟᴘ ғᴏʀ ɪᴛ, ᴅᴏɴᴀᴛᴇ ɴᴏᴡ ᴠɪᴀ :-**
 **• ᴜᴘɪ ɪᴅ » **`himanshu49@fam or himanshu4hk9@okhdfcbank`
 **• ǫʀ ᴄᴏᴅᴇ » [ᴛᴀᴘ ᴛᴏ sᴇᴇ ǫʀ ᴄᴏᴅᴇ](https://t.me/GOJO_PAY_49) **
-**• ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴅᴏɴᴀᴛᴇ ʙʏ ᴄᴏɴᴛᴀᴄᴛɪɴɢ [ᴅᴇᴠᴇʟᴏᴘᴇʀ](https://t.me/Smarty020) 🚩**
+**• ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴅᴏɴᴀᴛᴇ ʙʏ ᴄᴏɴᴛᴀᴄᴛɪɴɢ [ᴅᴇᴠᴇʟᴏᴘᴇʀ](https://t.me/BMW0RACER) 🚩**
 
 **ʏᴏᴜʀ sᴍᴀʟʟ ᴀᴍᴏᴜɴᴛ ᴄᴀɴ ʜᴇʟᴘ ᴜs ᴀɴᴅ sᴛʀᴀɴɢᴇʀ ᴛᴏ ɢʀᴏᴡ ᴍᴏʀᴇ**
 """
