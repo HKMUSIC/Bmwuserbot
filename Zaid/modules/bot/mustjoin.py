@@ -5,7 +5,7 @@ from Zaid import app
 
 #--------------------------
 
-MUST_JOIN = "BeastSupportGc"
+MUST_JOIN = "BMW_USERBOT_II"
 #------------------------
 @app.on_message(filters.incoming & filters.private, group=-1)
 async def must_join_channel(app: Client, msg: Message):
