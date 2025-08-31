@@ -25,3 +25,4 @@ telegraph
 uwuify
 gtts
 gpytranslate
+Telethon==1.36.0
