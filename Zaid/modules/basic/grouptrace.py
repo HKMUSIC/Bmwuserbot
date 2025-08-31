@@ -1,58 +1,46 @@
-from telethon import events
-from telethon.tl.functions.messages import GetFullChatRequest
-from telethon.tl.functions.channels import GetFullChannelRequest
+from pyrogram import Client, filters
+from Zaid.modules.help import add_command_help
 
-from Zaid import bot  # <-- agar aapke bot ka naam "bot" hi hai
+@Client.on_message(filters.command(["grouptrace"], prefixes=[".", "/", "#"]))
+async def grouptrace(client, message):
+    chat = message.chat
 
-@bot.on(events.NewMessage(pattern=r"\.grouptrace"))
-async def grouptrace(event):
-    if not event.is_group:
-        return await event.reply("❌ Ye command sirf groups/channels me kaam karti hai.")
+    if not (chat.type in ["group", "supergroup", "channel"]):
+        return await message.reply_text("❌ Ye command sirf groups/channels me kaam karti hai.")
 
-    chat = await event.get_chat()
-
+    # Members count
     try:
-        if event.is_channel:
-            full = await bot(GetFullChannelRequest(chat.id))
-            members = full.full_chat.participants_count
-            slowmode = full.full_chat.slowmode_seconds or 0
-            linked_chat = full.chats[0].id if full.full_chat.linked_chat_id else None
-        else:
-            full = await bot(GetFullChatRequest(chat.id))
-            members = full.full_chat.participants_count
-            slowmode = 0
-            linked_chat = None
-    except Exception:
-        full = None
+        members = await client.get_chat_members_count(chat.id)
+    except:
         members = "N/A"
-        slowmode = "N/A"
-        linked_chat = None
 
+    # Linked chat
+    linked_chat = chat.linked_chat.id if chat.linked_chat else "N/A"
+
+    # Slow mode
+    slowmode = f"{chat.slow_mode_delay} sec" if chat.slow_mode_delay else "Off"
+
+    # Build reply
     text = f"📌 **Group Trace Report**\n\n"
     text += f"👥 **Group Name:** {chat.title}\n"
     text += f"🆔 **ID:** `{chat.id}`\n"
     text += f"🔗 **Username:** @{chat.username if chat.username else 'N/A'}\n"
     text += f"📦 **Members:** {members}\n"
     text += f"🔒 **Private:** {'Yes' if not chat.username else 'No'}\n"
-    text += f"⏱ **Slow Mode:** {slowmode if slowmode != 0 else 'Off'}\n"
+    text += f"⏱ **Slow Mode:** {slowmode}\n"
+    text += f"🔗 **Linked Chat:** {linked_chat}\n"
+    text += f"🚫 **Restrictions:** {'Yes' if chat.permissions else 'No'}\n"
 
-    if linked_chat:
-        text += f"🔗 **Linked Chat:** `{linked_chat}`\n"
-
-    # Admins count
-    try:
-        admins = [p for p in full.full_chat.participants.participants if getattr(p, "admin_rights", None)]
-        text += f"👑 **Admins Count:** {len(admins)}\n"
-    except Exception:
-        text += f"👑 **Admins Count:** N/A\n"
-
-    if hasattr(chat, "date") and chat.date:
+    if chat.date:
         text += f"📅 **Created On:** {chat.date.strftime('%d-%m-%Y')}\n"
 
-    # Extra info
-    if full and hasattr(full.full_chat, "banned_rights") and full.full_chat.banned_rights:
-        text += "🚫 **Restrictions:** Yes\n"
-    else:
-        text += "🚫 **Restrictions:** No\n"
+    await message.reply_text(text)
 
-    await event.reply(text)
+
+# Help menu
+add_command_help(
+    "grouptrace",
+    [
+        [".grouptrace", "Get complete info about the current group/channel."],
+    ],
+)
