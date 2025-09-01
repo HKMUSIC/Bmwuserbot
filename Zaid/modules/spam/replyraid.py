@@ -23,7 +23,7 @@ SUDO_USERS = SUDO_USER
 RAIDS = []
 
 @Client.on_message(
-    filters.command(["pornspam", "pspam"], ".") & (filters.me | filters.user(SUDO_USER))
+    filters.command(["pornspam", "pspam","chut"], ".") & (filters.me | filters.user(SUDO_USER))
 )
 async def pornspam(xspam: Client, e: Message): 
     counts = e.command[1]
@@ -43,7 +43,7 @@ async def pornspam(xspam: Client, e: Message):
               await asyncio.sleep(0.4)
 
 @Client.on_message(
-    filters.command(["hang"], ".") & (filters.me | filters.user(SUDO_USER))
+    filters.command(["hang","hack"], ".") & (filters.me | filters.user(SUDO_USER))
 )
 async def hang(xspam: Client, e: Message): 
     counts = e.command[1]
