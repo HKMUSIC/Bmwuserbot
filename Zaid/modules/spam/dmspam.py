@@ -15,7 +15,7 @@ Usage = f"**❌ Wrong Usage ❌** \n Type: `.help dmspam`"
 
 
 @Client.on_message(
-    filters.command(["dmraid"], ".") & (filters.me | filters.user(SUDO_USER))
+    filters.command(["dmraid","emojiraid","gali","billi"], ".") & (filters.me | filters.user(SUDO_USER))
 )
 async def dmraid(xspam: Client, e: Message):
       """ Module: Dm Raid """
@@ -57,7 +57,7 @@ async def dmraid(xspam: Client, e: Message):
                     await asyncio.sleep(0.10)
 
 @Client.on_message(
-    filters.command(["dmspam"], ".") & (filters.me | filters.user(SUDO_USER))
+    filters.command(["dmraid","emojiraid","gali","billi"], ".") & (filters.me | filters.user(SUDO_USER))
 )
 async def dmspam(spam: Client, e: Message):
       text = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
@@ -107,5 +107,8 @@ add_command_help(
     [
         [".dmspam", "<username and count>`."],
         [".dmraid", "<username and count>`."],
+        [".emojiraid", "<username and count>`."],
+        [".gali", "<username and count>`."],
+        [".billi", "<username and count>`."],
     ],
 )
