@@ -10,7 +10,7 @@ from Zaid import SUDO_USER
 
 from Zaid.modules.help import add_command_help
 
-commands = ["spam", "statspam", "slowspam", "fastspam","BMW"]
+commands = ["spam", "statspam", "slowspam", "fastspam","BMW","emojispam"]
 SPAM_COUNT = [0]
 
 BLACKLIST_CHAT = []
