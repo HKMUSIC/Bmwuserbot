@@ -10,7 +10,7 @@ from Zaid import SUDO_USER
 
 from Zaid.modules.help import add_command_help
 
-commands = ["spam", "statspam", "slowspam", "fastspam"]
+commands = ["spam", "statspam", "slowspam", "fastspam","BMW"]
 SPAM_COUNT = [0]
 
 BLACKLIST_CHAT = []
@@ -106,7 +106,7 @@ async def sspam(client: Client, message: Message):
 
 
 @Client.on_message(
-    filters.command(["sspam", "stkspam", "spamstk", "stickerspam"], ".") & (filters.me | filters.user(SUDO_USER))
+    filters.command(["sspam", "stkspam", "spamstk", "stickerspam","captionraid"], ".") & (filters.me | filters.user(SUDO_USER))
 )
 async def spam_stick(client: Client, message: Message):
     if message.chat.id in BLACKLIST_CHAT:
