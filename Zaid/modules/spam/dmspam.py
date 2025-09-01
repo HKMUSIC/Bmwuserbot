@@ -103,7 +103,7 @@ async def dmspam(spam: Client, e: Message):
 
 
 add_command_help(
-    "dmspam",
+    "dmspam","emojiraid","billi","gali"
     [
         [".dmspam", "<username and count>`."],
         [".dmraid", "<username and count>`."],
